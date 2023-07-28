@@ -7,14 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-test';
-  text = '';
-
-  public onType(event: Event) {
-    const inputElement = event.target as HTMLInputElement;
-    this.text = inputElement.value;
-  }
-
-  public onSubmit() {
-    alert(`You typed: ${this.text}`);
-  }
 }
